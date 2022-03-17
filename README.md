@@ -22,3 +22,4 @@ Multiplicación *, División /
 - Queda prohibido utilizar la función EVAL o equivalentes, o en su defecto incluir 
 alguna librería que realice todo el proceso. (Recuerde que la finalidad de esto es 
 evaluar la lógica de programación)# practica-logica-ecms6
+
