@@ -66,14 +66,17 @@ else{
         siNo = false 
         console.log(_equation)
         }else{
-            let index = SearchSymbol(_equation)
-            if (index == true){siNo = false}
+            let _index = SearchSymbol(_equation)
+            console.log(_index)
+            if (_index == true){siNo = false}
             else{
-                let res = Calculate(index, _equation)
-                _equation = replaceArray(res, _equation, index)
+                let res = Calculate(_index, _equation)
+                _equation = replaceArray(res, _equation, _index)
             }
         }
+        console.log(_equation)
     }
+    
 }
 
 // // --------------------------------------------------------------------------------------------------------------------------------
