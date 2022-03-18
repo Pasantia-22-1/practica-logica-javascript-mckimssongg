@@ -1,20 +1,45 @@
-n1 = "2", n2 = "3"
-res = n1/n2
-console.log(res)
-function roundToTwo(num) {
-    return +(Math.round(num + "e+2")  + "e-2");
-}
-console.log(roundToTwo(res))
-const redondeaar = (num) => {return parseFloat(Math.round(num * 100) / 100).toFixed(2)}
-console.log(redondeaar(res))
-console.log(+(Math.round(4.799 + "e+2")  + "e-2"))
-
 let ecuacion = "4-7+8+9/2*3"
-ecuacion.split('')
+let ecuacionArray = ecuacion.split('');
+console.log(ecuacionArray)
+let index = ecuacionArray.indexOf("/");
+console.log(index)
+console.log(ecuacionArray)
+ecuacionArray.splice(index-1, 3,"resultado");
+console.log(ecuacionArray)
 
 
 
-// let suma= (a,b)=> { return a+b }
-// let division= (a,b)=> { return a+b }
-// let multiplicacion= (a,b)=> { return a+b }
-// let resta= (a,b)=> { return a+b }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// calculated(size, Arrequation){
+//     while (size != 1){
+//         let currentSize = size
+//         let chill = 0
+//         for (let i = 0;  i < currentSize; i++){
+//             if ((Arrequation[i] == "/" ) || (Arrequation[i] == "*")){
+//                 let n1 = Arrequation[i-1], n2 = Arrequation[i+1]
+//                 Arrequation[i] == "*" ? chill = Operacion.multiplicacion(n1, n2) : chill = Operacion.division(n1, n2)
+//                 equationUpdate = Arrequation.splice(i-1, 3,chill.toString());;
+//                 return equationUpdate;
+              
+//             }else if((Arrequation[i] == "+" ) || (Arrequation[i] == "-")){
+//                 let n1 = Arrequation[i-1], n2 = Arrequation[i+1]
+//                 Arrequation[i] == "*" ? chill = Operacion.multiplicacion(n1, n2) : chill = Operacion.division(n1, n2)
+//                 equationUpdate = Arrequation.splice(i-1, 3,chill.toString());;
+//                 return Arrequation=equationUpdate;
+//             }
+//     }
+//     }
+//     return Arrequation
+// }
